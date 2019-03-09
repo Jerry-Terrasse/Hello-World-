@@ -7,3 +7,10 @@ int main()
 	for(int i=1;i<=MAX;i++);
 	return 0;
 }
+/*
+$ time ./main 
+
+real	0m2.418s
+user	0m2.415s
+sys	0m0.001s
+*/
