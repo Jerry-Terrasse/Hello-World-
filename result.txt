@@ -1,0 +1,36 @@
+ubuntu@ubuntu:~/Hello-World-$ cat main.cpp 
+#define MAX 1000000000
+int main()
+{
+	for(int i=1;i<=MAX;i++);
+	return 0;
+}
+ubuntu@ubuntu:~/Hello-World-$ g++ main.cpp -o main
+ubuntu@ubuntu:~/Hello-World-$ time ./main
+
+real	0m2.416s
+user	0m2.415s
+sys	0m0.000s
+ubuntu@ubuntu:~/Hello-World-$ time ./main
+
+real	0m2.416s
+user	0m2.415s
+sys	0m0.001s
+ubuntu@ubuntu:~/Hello-World-$ cat mian.cpp
+#define MAX 1000000000
+int main()
+{
+	for(int i[1]={1};i[0]<=MAX;i[0]++);
+	return 0;
+}
+ubuntu@ubuntu:~/Hello-World-$ g++ mian.cpp -o mian
+ubuntu@ubuntu:~/Hello-World-$ time ./mian
+
+real	0m1.887s
+user	0m1.886s
+sys	0m0.000s
+ubuntu@ubuntu:~/Hello-World-$ time ./mian
+
+real	0m1.889s
+user	0m1.889s
+sys	0m0.000s
