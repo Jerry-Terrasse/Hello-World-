@@ -8,6 +8,12 @@ int main()
 	return 0;
 }
 /*
+$ time ./main
+
+real	0m0.321s
+user	0m0.320s
+sys	0m0.001s
+
 $ time ./main 
 
 real	0m2.418s
